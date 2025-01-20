@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location de Voitures</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        .hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: #ff9800;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #e68900;
+        }
+
+        .services, .cars, .contact {
+            padding: 2rem;
+            text-align: center;
+            background: #fff;
+            margin: 1rem 0;
+        }
+
+        .services-container, .car-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .service, .car {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+        }
+
+        .car img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 0.8rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #333;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CarRental</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#cars">Nos Voitures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Louez la voiture de vos rêves</h1>
+            <p>Des prix abordables, des voitures de luxe et un service de qualité.</p>
+            <a href="#cars" class="btn">Voir nos voitures</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Location à court terme</h3>
+                <p>Idéal pour les voyages rapides ou les escapades de week-end.</p>
+            </div>
+            <div class="service">
+                <h3>Location à long terme</h3>
+                <p>Des options flexibles pour les professionnels et les familles.</p>
+            </div>
+            <div class="service">
+                <h3>Assistance 24/7</h3>
+                <p>Un service client disponible à tout moment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cars" class="cars">
+        <h2>Nos Voitures</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="c:\Users\ok\OneDrive\Desktop\architecture des ordinateurs\JEEP-WRANGLER-SAHARA-MY25-PHEV-BLACK-FIGURINES.png" alt="Voiture 1">
+                <h3>BMW Série 5</h3>
+                <p>À partir de 100€/jour</p>
+            </div>
+            <div class="car">
+                <img src="c:\Users\ok\OneDrive\Desktop\architecture des ordinateurs\JEEP-WRANGLER-SAHARA-MY25-PHEV-BLACK-FIGURINES.png" alt="Voiture 2">
+                <h3>Audi A6</h3>
+                <p>À partir de 120€/jour</p>
+            </div>
+            <div class="car">
+                <img src="c:\Users\ok\OneDrive\Desktop\architecture des ordinateurs\JEEP-WRANGLER-SAHARA-MY25-PHEV-BLACK-FIGURINES.png" alt="Voiture 3">
+                <h3>Mercedes Classe E</h3>
+                <p>À partir de 150€/jour</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 CarRental. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        // Exemple simple de script JavaScript
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                console.log(`Vous avez cliqué sur ${link.textContent}`);
+            });
+        });
+    </script>
+</body>
+</html>
